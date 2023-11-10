@@ -3,10 +3,12 @@ package javaTips;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
 
 public class JavaTips {
 
-	private JFrame frame;
+	private JFrame frmEjemploDelUso;
 
 	/**
 	 * Launch the application.
@@ -16,7 +18,7 @@ public class JavaTips {
 			public void run() {
 				try {
 					JavaTips window = new JavaTips();
-					window.frame.setVisible(true);
+					window.frmEjemploDelUso.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,9 +37,13 @@ public class JavaTips {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmEjemploDelUso = new JFrame();
+		frmEjemploDelUso.setTitle("Ejemplo del uso de Tips");
+		frmEjemploDelUso.setBounds(100, 100, 450, 300);
+		frmEjemploDelUso.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel = new JPanel();
+		frmEjemploDelUso.getContentPane().add(panel, BorderLayout.CENTER);
 	}
 
 }
