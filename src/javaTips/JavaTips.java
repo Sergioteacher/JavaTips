@@ -5,6 +5,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.Font;
 
 public class JavaTips {
 
@@ -45,6 +47,10 @@ public class JavaTips {
 		JPanel panel_principal = new JPanel();
 		frmEjemploDelUso.getContentPane().add(panel_principal, BorderLayout.CENTER);
 		panel_principal.setLayout(new BorderLayout(0, 0));
+		
+		JButton btnBotonCentral = new JButton("pulsame ...");
+		btnBotonCentral.setFont(new Font("Trebuchet MS", Font.ITALIC, 18));
+		panel_principal.add(btnBotonCentral, BorderLayout.CENTER);
 	}
 
 }
