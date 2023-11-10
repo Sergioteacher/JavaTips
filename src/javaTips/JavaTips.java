@@ -9,6 +9,8 @@ import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class JavaTips {
 
@@ -56,6 +58,11 @@ public class JavaTips {
 		panel_principal.add(lblUp, BorderLayout.NORTH);
 		
 		JButton btnBotonCentral = new JButton("pulsame ...");
+		btnBotonCentral.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Ha pulsado el botón principal");
+			}
+		});
 		btnBotonCentral.setToolTipText("Pulsa para ver el mensaje");
 		btnBotonCentral.setFont(new Font("Trebuchet MS", Font.ITALIC, 18));
 		panel_principal.add(btnBotonCentral, BorderLayout.CENTER);
