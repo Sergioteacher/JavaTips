@@ -56,6 +56,7 @@ public class JavaTips {
 		panel_principal.add(lblUp, BorderLayout.NORTH);
 		
 		JButton btnBotonCentral = new JButton("pulsame ...");
+		btnBotonCentral.setToolTipText("Pulsa para ver el mensaje");
 		btnBotonCentral.setFont(new Font("Trebuchet MS", Font.ITALIC, 18));
 		panel_principal.add(btnBotonCentral, BorderLayout.CENTER);
 		
