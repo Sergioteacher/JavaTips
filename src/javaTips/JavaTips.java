@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -61,6 +62,7 @@ public class JavaTips {
 		btnBotonCentral.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println("Ha pulsado el botón principal");
+				JOptionPane.showMessageDialog(null, "Me has pulsado!");
 			}
 		});
 		btnBotonCentral.setToolTipText("Pulsa para ver el mensaje");
