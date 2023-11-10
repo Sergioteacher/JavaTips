@@ -42,8 +42,9 @@ public class JavaTips {
 		frmEjemploDelUso.setBounds(100, 100, 450, 300);
 		frmEjemploDelUso.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JPanel panel = new JPanel();
-		frmEjemploDelUso.getContentPane().add(panel, BorderLayout.CENTER);
+		JPanel panel_principal = new JPanel();
+		frmEjemploDelUso.getContentPane().add(panel_principal, BorderLayout.CENTER);
+		panel_principal.setLayout(new BorderLayout(0, 0));
 	}
 
 }
